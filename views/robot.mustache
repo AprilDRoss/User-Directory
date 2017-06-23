@@ -6,19 +6,91 @@
     <link rel="stylesheet" href="/app.css">
   </head>
   <body>
-    <h1 class="first-header">Index</h1>
-    <div class="robots">
-      <ul>
+    <div class="container">
+      <h1 class="first-header">Index</h1><br>
+      <br>
+      <!-- open up users -->
       {{#users}}
-      <li class="users">
+      <div class="robots">
        <img class="pics" src="{{avatar}}">
-       <p class="name">{{username}}</p>
-       <p class ="job">{{job}}</p>
-       <p class="company">{{company}}</p>
-     </li>
+       <p class="name">{{name}}</p>
+       {{#job}}
+       <p class="job-company">{{job}}{{company}}</p>
+       {{/job}}
+       {{^job}}
+       <p class="red">available for hire</p>
+       {{/job}}
+     </div>
        {{/users}}
+     </div>
+     <br>
+
+     <h1 class="second-headers">A user with all their data</h1>
+    <section class="firstRobot">
+       <div class="firstbox">
+         <img class="robotpic" src="https://robohash.org/blanditiisexercitationemquaerat.png?size=150x150&set=set1">
+         <p class="RobotName">Hamlen Juza</p>
+       </div>
+
+       <div class="secondbox">
+        <p class="info">Kamennogorsk,Russia | Engineer IV Stark, Feil and Bode</p>
+        <p class="emailphone">hjuza0@blogger.com | 7-(397)813-7803</p>
+      </div>
+
+      <div class="belowimage">
+
+      <div class="thirdbox">
+       <p class="education">Education</p>
+       <p class="skills">Skills</p>
+     </div>
+
+      <div class="fourthbox">
+        <p class="university">Pomor State University</p>
+        <ul class="skls">
+          <li class="skillsList">DMVPN</li>
+          <li class="skillsList">HDX</li>
+          <li class="skillsList">Rhino 3D</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <!-- <section class="secondRobot">
+     <h1 class="second-headers">A user looking for work</h1><br>
+     <div class="firstbox>"
+      <img class="robotpic" src ="https://robohash.org/iurequiaet.bmp?size=150x150&set=set1">
+      <p class="RobotName">Dee Odda</p>
+     </div>
+      <div class="secondbox">
+       <p class="info">Zhujiang,China|</p> <p class="red">Available for hire</p>
+       <p class="emailphone">dodda1@nifty.com | 86-(826)796-6920</p>
+     </div>
+     <div class="thirdbox"
+     <p class="education">Education</p> <p class="college">Chongqing Education College</p>
+     <p class="skills">Skills</p>
+     <ul class="skill-list">
+       <li>Petrochemical</li>
+       <li>Omnet++</li>
+       <li>Spanish</li>
      </ul>
-   </div class="lower-page">
-    <h1 class="second-header">A user with all their data</h1>
+    </section> -->
+
+    <!-- <section class="thirdRobot">
+     <h1 class="second-headers">A user missing education and city data</h1>
+     <img class="robotpic" src="https://robohash.org/oditipsanostrum.jpg?size=150x150&set=set1">
+     <p class="RobotName">Carleen Timmes</p>
+     <p class="info">Philippines| Data Coordinator, West, O'kon and Beahan</p>
+     <p class="emailphone">ctimmes2@lycos.com | 63-(135)174-4259</p>
+     <p class="skills">Skills</p>
+     <ul class="skill-list">
+       <li>NDC</li>
+       <li>ICD-10</li>
+       <li>VTAM</li>
+     </ul>
+    </section>
+  </div> -->
+
+
+</div>
   </body>
 </html>

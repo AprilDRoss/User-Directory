@@ -1,12 +1,58 @@
+.container{
+  display:flex;
+  flex-flow: wrap;
+}
+
 .first-header{
   font-size: 36px;
   color:grey;
 }
-ul{
-  display:flex;
-  flex-flow:row wrap;
-}
-.users{
-  list-style-type: none;
+.robots{
   border:0.5px grey solid;
+  flex-flow: row wrap;
+}
+
+.red{
+  color:red;
+}
+
+.second-headers{
+  font-size:24px;
+}
+
+.robotpic{
+  border: 0.5px solid grey;
+  border-radius: 70px;
+  float:left;
+}
+
+.RobotName{
+  font-size:48px;
+}
+
+.secondbox{
+margin-top: -40px;
+}
+
+.belowimage{
+  display:flex;
+  flex-direction: row;
+}
+.thirdbox{
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: -40px;
+}
+
+.fourthbox{
+  font-size: 18px;
+}
+.university{
+  margin-left: 30px;
+}
+.skls{
+  margin-left: -10px;
+}
+.skillsList{
+  list-style-type: none;
 }
