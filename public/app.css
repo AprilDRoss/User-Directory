@@ -36,23 +36,40 @@ margin-top: -40px;
 
 .belowimage{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .thirdbox{
-  font-weight: bold;
   font-size: 18px;
-  margin-left: -40px;
+  display: flex;
+  flex-direction: row;
+}
+.education{
+  font-weight: bold;
+}
+.university{
+  margin-left: 20px;
+  padding-right: 20px;
 }
 
 .fourthbox{
+display:flex;
+flex-flow: row;
+}
+
+.skls{
+  display:flex:
+  flex-direction:column;
+}
+.skills{
   font-size: 18px;
 }
-.university{
-  margin-left: 30px;
+
+.los{
+  display: flex;
+  flex-direction: row;
 }
-.skls{
-  margin-left: -10px;
-}
+
 .skillsList{
   list-style-type: none;
+  font-size: 18px;
 }
